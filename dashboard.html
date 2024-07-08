@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Load jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title> Website Capstone </title>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<section id="sidebar">
+    <a class="brand">
+    </a>
+
+    <ul class="side-menu top">
+        <li class="active">
+            <a href="dashboard.html">
+                <i class='bx bxs-dashboard' ></i>
+                <span class="text">Data Pemantauan</span>
+            </a>
+        </li>
+       
+        <li>
+            <a href="analisis.html">
+                <i class='bx bxs-doughnut-chart' ></i>
+                <span class="text">Analisis Data</span>
+            </a>
+        </li>
+               
+        <li>
+            <a href="forget.html">
+                <i class='bx bxs-id-card'></i>
+                <span class="text">Hubungi Kami</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <ul class="side-menu">
+        <li>
+            <a href="index.html" class="logout">
+                <i class='bx bxs-log-out-circle' ></i>
+                <span class="text">Keluar</span>
+            </a>
+        </li>
+    </ul>
+
+</section>
+<!-- SIDEBAR -->
+
+<!-- TOGGLE BUTTON -->
+<div id="sidebarToggle" class="sidebar-toggle">
+  <i class="bx bx-menu"></i>
+</div>
+
+<!-- CONTENT -->
+<section id="content">
+    <!-- MAIN -->
+    <main>
+        <div class="head-title">
+            <div class="left">
+                <h1>Remote Monitoring System for Sea Water Level Rise</h1>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">Data Pemantauan</a>
+                    </li>
+                </ul>
+            </div>
+
+            <input type="date" id="datePicker" />
+            <button  class="btn-download">
+              <i class='bx bxs-cloud-download'></i>
+              <span class="text">Unduh Data</span>
+          </button>
+        </div> 
+
+              <div class="kolom">
+                <div class="card2">
+                    <div class="datetime">
+                        <div class="time"></div>
+                        <div class="date"></div>
+                    </div>
+                </div>
+    
+                <div class="card3">
+                  <h4>Hasil Pemantauan Terkini</h4>
+                  <p></p>
+                </div>
+    
+                <div class="card4">
+                  <h4>Status Ketinggian Air Terkini</h4>
+                  <p></p>
+                </div>
+              </div>
+            
+
+              <section class="data-pengamatan">
+                <div class="data-pengamatan-list">
+                  <h1>Data Pemantauan Ketinggian Air</h1>
+                  <table class="table" id="tbldata">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Tanggal</th>
+                        <th>Jam</th>
+                        <th>Ketinggian Air (mm)</th>
+                        <th>Elevasi (Peilschale)</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                      </tr>
+    
+                      <tr class="active">
+                        <td>02</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                      </tr>
+    
+                      <tr>
+                        <td>03</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                      </tr>
+    
+                      <tr>
+                        <td>04</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                      </tr>
+    
+                      <tr >
+                        <td>05</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                      </tr>
+                      <tr >
+                        <td>06</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>                    
+                      </tr> 
+                      <tr >
+                        <td>07</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>
+                        <td>.......</td>                    
+                      </tr> 
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+    </main>
+    <!-- MAIN -->
+
+</section>
+<!-- CONTENT -->
+
+    <script src="clock.js"></script>
+    <script src="script.js"></script>
+</body>

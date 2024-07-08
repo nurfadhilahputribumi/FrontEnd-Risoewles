@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>       
+    <title> Website Capstone </title>
+</head>
+
+<body>
+    <div class="layar-penuh">
+        <header id="home">
+            <div class="container"></div>
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="My Video.mp4" type="video/mp4">
+            </video>
+
+            <div class="pesan">
+                <div class="isi">
+                    <div class="left-side">
+                        <div class="address details">
+                            <i class='bx bxs-edit-location'></i>
+                            <div class="topic">Alamat</div>
+                            <div class="text-one">Telkom University</div>
+                            <div class="text-two">Bandung, Indonesia</div>
+                        </div>
+
+                        <div class="phone details">
+                            <i class='bx bxs-phone-incoming'></i>
+                            <div class="topic">No Telepon</div>
+                            <div class="text-one">0851 7546 1687</div>
+                        </div>
+
+                        <div class="email details">
+                            <i class='bx bxs-envelope'></i>
+                            <div class="topic">Email</div>
+                            <div class="text-one">risowles.radar@gmail.com</div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="topic-text">
+                            <br> Kirim Pesan </br> 
+                            <p>Jika Anda memiliki masalah, Anda dapat mengirimi kami pesan dari sini. Dengan senang hati kami membantu Anda.</p>
+                        </div>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="d29d0e24-243a-4199-b06d-592e03e065bf">
+                                <div class="isi-box">
+                                    <input type="text" name="name" placeholder="Nama Anda">
+                                </div>
+
+                                <div class="isi-box">
+                                    <input type="email" name="email" placeholder="Email Anda">
+                                </div>
+
+                                <div class="isi-box message-box">
+                                    <textarea name="message" placeholder="Pesan Anda" required></textarea> 
+                                </div>
+
+                                <div class="button">
+                                    <button type="submit">Kirim</button>
+                                    <input type="button" value="Kembali" onclick="goBack()">
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
